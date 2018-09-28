@@ -5,13 +5,14 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="css/main.css">
       <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>CS Travel</title>
     </head>
 
-    <body>
+    <body id="home" class="scrollspy">
       <!-- Navbar -->
       <div class="navbar-fixed">
   <nav class="cyan accent-3">
@@ -87,6 +88,20 @@
       </li>
     </ul>
   </section>
+  <!-- Section: Search -->
+  <section id="search" class="section section-search cyan accent-3 darken-1 white-text center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Destinations</h3>
+          <div class="input-field">
+            <input type="text" class="white grey-text autocomplete" id="autocomplete-input"
+            placeholder="Dungarvan, Holland, etc...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
  <!--JavaScript at end of body for optimized loading-->
@@ -106,6 +121,26 @@
     height: 500,
     transition: 500,
     interval: 6000
+  });
+  
+  
+  
+  // Autocomplete
+  const ac = document.querySelector
+  ('.autocomplete');
+  M.Autocomplete.init(ac, {
+    data: {
+      "Dungarvan": null,
+      "Holland": null,
+      "Mexico": null,
+      "Hawaii": null,
+      "Florida": null,
+      "California": null,
+      "Jamaica": null,
+      "Europe": null,
+      
+    }
+    
   });
   
  </script>
