@@ -9,6 +9,7 @@
       <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAgWXl6gNN4hO1kHofY0XaVbhI6d5hKggs"></script>
       <title>CS Travel</title>
     </head>
 
@@ -306,7 +307,7 @@
     
     
      <!-- Section: Map -->
-     <section class="section section-map scrollspy cyan accent-3 darken-2 white-text center">
+     <section class="section section-map scrollspy cyan accent-3 darken-2 center">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -314,55 +315,92 @@
       Check out<span class="purple-text"> hotels</span> in your dream location!
      </h4>
      
- <div id="googleMap" style="width:100%;height:400px;"></div>
+ <div id="map" style="width:100%;height:400px;"></div>
 </div>
 </div>
 </div>
 </section>
 
 <script>
+ var map;
+  var infoWindow;
+  
+  var request;
+  var service;
+  var markers = [];
+  
+  function initialize(){
+    var center = new google.maps.LatLng(52.0914048,-7.6561543);
 
-// Initliaze map
-var map;
-function initialize() {
-  var center = new google.maps.LatLng(53.350140, -6.266155);
-  map = new google.maps.Map(document.getElementById('googleMap'), {
-    center: center,
-    zoom: 13
     
-  });
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: center,
+      zoom: 13
+    });
+    
+    request = {
+      location: center,
+      radius: 8047,
+      types: ['hotel']
+    };
+    infoWindow = new google.maps.InfoWindow();
+    
+    service = new google.maps.places.PlacesService(map);
+    
+    service.nearbySearch(request, callback);
+    
+    google.maps.event.addListener(map, 'rightclick', function(event) {
+      map.setCenter(event.latLng)
+      clearResults(markers)
+      
+      var request = {
+        location: event.latLng,
+        radius: 8047,
+        types: ['hotel']
+        
+      };
+      service.nearbySearch(request, callback);
+    })
+  }
   
-// Hotel search
-  var request = {
-    location: center,
-    radius: 8087,
-    types: ['hotel']
-  };
-  
-  var service = new google.maps.places.PlacesService(map);
-  
-  service.nearbySearch(request, callback);
-}
-
-function callback(results, status) {
-  if(status == google.maps.places.PlacesServiceStatus.OK){
-    for (var i = 0; i < results.length; i++){
-      createMarker(results[i]);
+  function callback(results, status) {
+    if(status == google.maps.places.PlacesServiceStatus.OK){
+      for (var i = 0; i < results.length; i++){
+        markers.push(createMarker(results[i]));
+      }
     }
   }
-}
-
-// Create Markers
-function createMarker(place) {
-  var placeLoc = place.geometry.location;
-  var marker = new google.maps.Marker({
-    map: map,
-    position: place.geometry.location
+  
+  function createMarker(place) {
+    var placeLoc = place.geometry.location;
+    var marker = new google.maps.Marker({
+      map: map,
+      position: place.geometry.location
+    });
+  
+  
+  google.maps.event.addListener(marker, 'click', function() {
+    
+    infoWindow.setContent(place.name);
+    infoWindow.open(map, this);
   });
-}
-</script>
+  return marker;
+  }
+  
+  function clearResults(markers) {
+    for (var m in markers) {
+      markers[m].setMap(null)
+    }
+    markers = []
+  }
+  
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+  <title>Document</title>
+  
 
-<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAgWXl6gNN4hO1kHofY0XaVbhI6d5hKggs&callback=initialize"></script>
+
+
 
   
     
@@ -385,7 +423,7 @@ function createMarker(place) {
    M.Sidenav.init(sideNav, {});
    
    
-   //Slider
+   // Slider
   const slider =document.querySelector('.slider');
   M.Slider.init(slider, {
     indicators: false,
