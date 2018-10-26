@@ -451,6 +451,20 @@
           document.getElementById('autocomplete').placeholder = 'Enter a city';
         }
       }
+      
+      // Search for hotels in the selected city, within the viewport of the map.
+      function search() {
+        var search = {
+          bounds: map.getBounds(),
+          types: ['lodging']
+        };
+
+        places.nearbySearch(search, function(results, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            clearResults();
+            clearMarkers();
+          
+          
   
 
     </script>  
