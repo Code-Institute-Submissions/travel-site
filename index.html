@@ -95,49 +95,7 @@
       </li>
     </ul>
   </section>
-  <!-- Section: Search -->
-  <section id="search" class="section section-search cyan accent-3 darken-1 white-text center scrollspy">
-    <div class="container">
-      <div class="row">
-        <div class="col s12">
-          <h3>Search Destinations</h3>
-          <div class="input-field">
-            <input type="text" class="white grey-text autocomplete" id="autocomplete-input"
-            placeholder="Dungarvan, Holland, etc...">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   
-   <!-- Section: Icon Boxes -->
-  <section class="section section-icons grey lighten-4 center">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large purple-text">room</i>
-            <h4>Pick Where</h4>
-            <p>Pick your ideal location.</p>
-            </div>
-          </div>
-          <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large purple-text">store</i>
-            <h4>Travel Shop</h4>
-            <p>Shop in confidence with us.</p>
-            </div>
-          </div>
-          <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large purple-text">airplanemode_active</i>
-            <h4>Fly Cheap</h4>
-            <p>Cheapest prices guaranteed.</p>
-            </div>
-          </div>
-        </div>
-    </div>
-  </section>
   
   <!-- Section: Popular Places -->
  <section id="popular" class="section section-popular scrollspy">
@@ -306,79 +264,7 @@
     </div>
     </section>
     
-     <!-- Section: Map -->
      
-    <section id="googleMap" class="section section-map scrollspy cyan accent-3 darken-2 center">
-    
-     <h4 class="center">
-      Check out<span class="purple-text"> hotels</span> in your dream location!
-     </h4>
-     
-    <div id="findhotels">
-      Find hotels in:
-    </div>
-
-    <div id="locationField">
-      <input id="autocomplete" placeholder="Enter a city" type="text" />
-    </div>
-
-    <div id="controls-wrapper">
-      <select id="country" class="browser-default">
-        <option value="all">All</option>
-        <option value="au">Australia</option>
-        <option value="br">Brazil</option>
-        <option value="ca">Canada</option>
-        <option value="fr">France</option>
-        <option value="de">Germany</option>
-        <option value="mx">Mexico</option>
-        <option value="nz">New Zealand</option>
-        <option value="it">Italy</option>
-        <option value="za">South Africa</option>
-        <option value="es">Spain</option>
-        <option value="pt">Portugal</option>
-        <option value="us">U.S.A.</option>
-        <option value="uk" selected>United Kingdom</option>
-      </select>
-    </div>
-    </section>
-    <div id="map"></div>
-    <div id="listing">
-      <table id="resultsTable">
-        <tbody id="results"></tbody>
-      </table>
-    </div>
-    
-    
-    <div style="display: none">
-      <div id="info-content">
-        <table>
-          <tr id="iw-url-row" class="iw_table_row">
-            <td id="iw-icon" class="iw_table_icon"></td>
-            <td id="iw-url"></td>
-          </tr>
-          <tr id="iw-address-row" class="iw_table_row">
-            <td class="iw_attribute_name">Address:</td>
-            <td id="iw-address"></td>
-          </tr>
-          <tr id="iw-phone-row" class="iw_table_row">
-            <td class="iw_attribute_name">Telephone:</td>
-            <td id="iw-phone"></td>
-          </tr>
-          <tr id="iw-rating-row" class="iw_table_row">
-            <td class="iw_attribute_name">Rating:</td>
-            <td id="iw-rating"></td>
-          </tr>
-          <tr id="iw-website-row" class="iw_table_row">
-            <td class="iw_attribute_name">Website:</td>
-            <td id="iw-website"></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    
-    
-
-    
     <script>
       // This example uses the autocomplete feature of the Google Places API.
       // It allows the user to find all hotels in a given place, within a given
@@ -577,26 +463,6 @@
     height: 500,
     transition: 500,
     interval: 6000
-  });
-  
-  
-  
-  // Autocomplete
-  const ac = document.querySelector
-  ('.autocomplete');
-  M.Autocomplete.init(ac, {
-    data: {
-      "Dungarvan": null,
-      "Holland": null,
-      "Mexico": null,
-      "Hawaii": null,
-      "Florida": null,
-      "California": null,
-      "Jamaica": null,
-      "Europe": null,
-      
-    }
-    
   });
   
   
