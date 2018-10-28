@@ -162,4 +162,10 @@
         clearResults();
         clearMarkers();
       }
+      
+      function dropMarker(i) {
+        return function() {
+          markers[i].setMap(map);
+        };
+      }
   
