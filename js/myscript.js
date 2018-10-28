@@ -193,4 +193,11 @@
         tr.appendChild(nameTd);
         results.appendChild(tr);
       }
+      
+      function clearResults() {
+        var results = document.getElementById('results');
+        while (results.childNodes[0]) {
+          results.removeChild(results.childNodes[0]);
+        }
+      }
   
