@@ -194,6 +194,20 @@
         results.appendChild(tr);
       }
       
+      // Get the place details for a hotel. Show the information in an info window,
+      // anchored on the marker for the hotel that the user selected.
+      function showInfoWindow() {
+        var marker = this;
+        places.getDetails({placeId: marker.placeResult.place_id},
+            function(place, status) {
+              if (status !== google.maps.places.PlacesServiceStatus.OK) {
+                return;
+              }
+              infoWindow.open(map, marker);
+              buildIWContent(place);
+            });
+      }
+      
       function clearResults() {
         var results = document.getElementById('results');
         while (results.childNodes[0]) {
