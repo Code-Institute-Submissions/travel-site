@@ -32,4 +32,21 @@ table {
 #locationField {
         background-color: #fff;
         height: 45px;
+        width: 100%;
+      }
+
+#autocomplete {
+        width: 50%;
+        text-align: center;
+      }
+
+.placeIcon {
+        width: 20px;
+        height: 34px;
+        margin: 4px;
+      }
+      
+.hotelIcon {
+        width: 24px;
+        height: 24px;
       }
