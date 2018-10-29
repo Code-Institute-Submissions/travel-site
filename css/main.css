@@ -1,10 +1,3 @@
-.section-search input{
-    padding: 5px !important;
-    font-size: 18px !important;
-    width: 90% !important;
-    border: #f4f4f4 3px solid !important;
-}
-
 .section-follow .fa-{
     margin: 5px 10px;
 }
@@ -22,6 +15,9 @@
 table {
         font-size: 12px;
       }
+#findhotels {
+    text-align:center;
+}
 
 #listing {
         cursor: pointer;
@@ -31,8 +27,10 @@ table {
 
 #locationField {
         background-color: #fff;
+        text-align: center;
         height: 45px;
         width: 100%;
+        
       }
 
 #autocomplete {
