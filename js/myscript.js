@@ -290,9 +290,9 @@ function buildIWContent(place) {
 		var ratingHtml = '';
 		for (var i = 0; i < 5; i++) {
 			if (place.rating < (i + 0.5)) {
-				ratingHtml += '✩';
+				ratingHtml += '&#10025;';
 			} else {
-				ratingHtml += '✭';
+				ratingHtml += '&#10029;';
 			}
 			document.getElementById('iw-rating-row').style.display = '';
 			document.getElementById('iw-rating').innerHTML = ratingHtml;
