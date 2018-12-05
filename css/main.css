@@ -8,7 +8,7 @@ table {
         font-size: 12px;
       }
 
-.section-follow .fa-{
+.section-follow .fa-3x{
     margin: 5px 10px;
 }
 
@@ -37,7 +37,7 @@ table {
       }
 
 #map {
-        height: 50%;
+        height: 100%;
         width: 100%;
       }
       
@@ -48,8 +48,6 @@ table {
 
 #listing {
         
-        
-        height: 470px;
         overflow: auto;
         left: 442px;
         top: 0px;
