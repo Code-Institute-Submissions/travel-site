@@ -111,11 +111,12 @@
     
     </section>
     <div id="map"></div>
-    <div id="listing">
-      <table id="resultsTable">
+    
+     <table id="resultsTable">
         <tbody id="results"></tbody>
-      </table>
-    </div>
+      </table> 
+    
+    
     
     
     <div style="display: none">
@@ -294,17 +295,17 @@
             <h5>Please fill out this form</h5>
            <form action="/">
             <div class="input-field">
-              <input placeholder="Name" id="name" type="text" class="validate">
+              <input placeholder="Name" id="name" type="text" class="validate" required />
         </div>
         <div class="input-field">
-              <input placeholder="Email" id="email" type="email" class="validate">
+              <input placeholder="Email" id="email" type="email" class="validate" required />
         </div>
         <div class="input-field">
-              <input placeholder="Phone" id="phone" type="text" class="validate">
+              <input placeholder="Phone" id="phone" type="text" class="validate" required />
         </div>
         <div class="input-field">
             <textarea class="materialize-textarea" 
-            placeholder="Enter Message"></textarea>
+            placeholder="Enter Message" required /></textarea>
         </div>
         <button class="btn waves-effect waves-light light-blue darken-1" onclick="myFunction();" type="submit" value="submit" name="submit">Submit 
     <i class="material-icons right">send</i>
