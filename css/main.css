@@ -7,6 +7,15 @@ html, body {
 table {
         font-size: 12px;
       }
+      
+.slider{
+        height:300px !important;
+}
+
+.slides{
+        height:300px !important;
+}
+
 
 .section-follow .fa-3x{
     margin: 5px 10px;
@@ -35,10 +44,15 @@ table {
 .iw_table_icon {
         text-align: right;
       }
+      
+
+
 
 #map {
         height: 100%;
         width: 100%;
+        position: relative; 
+        overflow: hidden;
       }
       
 
