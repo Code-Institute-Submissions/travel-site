@@ -45,29 +45,6 @@ table {
         text-align: right;
       }
       
-
-
-
-#map {
-        height: 100%;
-        width: 100%;
-        position: relative; 
-        overflow: hidden;
-      }
-      
-
-#findhotels {
-    text-align:center;
-}
-
-#listing {
-        
-        overflow: auto;
-        left: 442px;
-        top: 0px;
-        cursor: pointer;
-        overflow-x: hidden;
-      }
       
 
 #locationField {
@@ -83,9 +60,44 @@ table {
         text-align: center;
       }
 
+#map {
+        height: 100%;
+        width: 100%;
+        position: relative; 
+        overflow: hidden;
+      }
+      
+
+#findhotels {
+    text-align:center;
+}
+
+#listing {
+        
+       position: absolute;
+    height: 38%;
+    overflow: auto;
+    top: 24px;
+    cursor: pointer;
+    overflow-x: hidden;}
+    
+#resultsTable {
+    border-collapse: collapse;
+    width: 240px;
+}
+
+#listing {
+    position: absolute;
+    height: 38%;
+    overflow: auto;
+    top: 24px;
+    cursor: pointer;
+    overflow-x: hidden;
+}
 
       
  #rating {
         font-size: 13px;
         font-family: Arial Unicode MS;
       }
+     

@@ -92,6 +92,7 @@
       </li>
     </ul>
   </section>
+  
  <!-- Section: Map -->
      
     <section id="googleMap" class="section section-map scrollspy light-blue darken-1">
@@ -108,14 +109,21 @@
       <input id="autocomplete" placeholder="Enter a city" type="text" />
     </div>
 
-    
     </section>
-    <div id="map"></div>
     
-     <table id="resultsTable">
+    <div style="width:100%; height:100%; display:inline-flex;">
+
+      <div id="map">
+      </div>
+
+    
+       <div id="listing" style="width:30%; position: relative;" >
+      <table id="resultsTable">
         <tbody id="results"></tbody>
-      </table> 
-    
+      </table>
+      </div>
+      </div>
+  
     
     
     
