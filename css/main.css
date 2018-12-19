@@ -9,13 +9,7 @@ table {
       }
       
 
-
-.slides{
-        height:300px !important;
-}
-
-
-.section-follow .fa-3x{
+.section-follow .fa-2x{
     margin: 5px 10px;
 }
 
@@ -78,7 +72,7 @@ table {
 
 #listing {
     position: absolute;
-    height: 100%;
+    height: 80%;
     overflow: auto;
     cursor: pointer;
     overflow-x: hidden;

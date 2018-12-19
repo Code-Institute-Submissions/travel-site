@@ -67,23 +67,19 @@
   
  <!-- Section: Map -->
      
-    <section id="googleMap" class="section section-map scrollspy light-blue darken-1">
+    <section id="googleMap" class="section-map scrollspy light-blue darken-1">
     
-     <h4 class="center white-text">
-      Check out hotels in your dream location!
-     </h4>
      
-    <div id="findhotels">
-      Find hotels in:
-    </div>
+     
+    
 
     <div id="locationField">
-      <input id="autocomplete" placeholder="Enter a city" type="text" />
+      <input id="autocomplete" placeholder="Find hotels in..." type="text" />
     </div>
 
     </section>
     
-    <div style="width:100%; height:100%; display:inline-flex;">
+    <div style="width:100%; height:80%; display:inline-flex;">
 
       <div id="map">
       </div>
@@ -179,7 +175,7 @@
  <!-- Section: Return to map -->
   <section class="section light-blue darken-1 white-text center">
     
-    <h4>Like what you see? Search for hotels in your dream location <a href="#googleMap"><span class="purple-text">now!</span></a></h4>
+    <h4>Like what you see? Search for hotels in your dream location <a href="#locationField"><span class="purple-text">now!</span></a></h4>
   </section>
   
   
@@ -279,7 +275,6 @@
     
      <!-- Footer -->
   <footer class="section section-follow light-blue darken-1 white-text center">
-    <section class="section section-follow light-blue darken-1 white-text center">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -302,7 +297,6 @@
         </div>
       </div>
     </div>
-  </section>
   </footer>
     
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgWXl6gNN4hO1kHofY0XaVbhI6d5hKggs&libraries=places&callback=initMap"
