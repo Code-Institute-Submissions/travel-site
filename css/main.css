@@ -70,14 +70,6 @@ table {
     text-align:center;
 }
 
-#listing {
-        
-       position: absolute;
-    height: 38%;
-    overflow: auto;
-    top: 24px;
-    cursor: pointer;
-    overflow-x: hidden;}
     
 #resultsTable {
     border-collapse: collapse;
@@ -86,9 +78,8 @@ table {
 
 #listing {
     position: absolute;
-    height: 38%;
+    height: 100%;
     overflow: auto;
-    top: 24px;
     cursor: pointer;
     overflow-x: hidden;
 }
