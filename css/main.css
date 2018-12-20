@@ -83,4 +83,8 @@ table {
         font-size: 13px;
         font-family: Arial Unicode MS;
       }
+      
+@media all and (max-width: 992px) {
+  #resultsTable { display: none; }
+}
      
