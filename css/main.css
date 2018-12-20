@@ -9,10 +9,6 @@ table {
       }
       
 
-.section-follow .fa-2x{
-    margin: 5px 10px;
-}
-
 .section-return{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -42,7 +38,15 @@ table {
 .iw_table_icon {
         text-align: right;
       }
-      
+
+.section-footer{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.fa-3x{
+    margin: 5px 10px;
+}
       
 
 #locationField {
