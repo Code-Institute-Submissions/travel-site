@@ -1,103 +1,98 @@
-html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+html,body {
+height:100%;
+margin:0;
+padding:0;
+}
 
 table {
-        font-size: 12px;
-      }
-
-.section-return{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+font-size:12px;
 }
 
+.section-return {
+padding-top:2rem;
+padding-bottom:2rem;
+}
 
 .placeIcon {
-        width: 20px;
-        height: 34px;
-        margin: 4px;
-      }
-      
+width:20px;
+height:34px;
+margin:4px;
+}
+
 .hotelIcon {
-        width: 24px;
-        height: 24px;
-      }
+width:24px;
+height:24px;
+}
 
 .iw_table_row {
-        height: 18px;
-      }
-      
+height:18px;
+}
+
 .iw_attribute_name {
-        font-weight: bold;
-        text-align: right;
-      }
-      
+font-weight:700;
+text-align:right;
+}
+
 .iw_table_icon {
-        text-align: right;
-      }
-      
-.responsive-img{
-    margin-bottom: 15px !important;
+text-align:right;
 }
 
-.section-footer{
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+.responsive-img {
+margin-bottom:15px!important;
 }
 
-.fa-2x{
-    margin: 5px 10px;
+.section-footer {
+padding-top:.2rem;
+padding-bottom:.2rem;
 }
-      
+
+.fa-2x {
+margin:5px 10px;
+}
 
 #locationField {
-        background-color: #fff;
-        text-align: center;
-        height: 45px;
-        width: 100%;
-        
-      }
-
-#autocomplete {
-        width: 50%;
-        text-align: center;
-      }
-
-#map {
-        height: 80vh;
-        width: 100vw;
-        position: relative; 
-        overflow: hidden;
-      }
-      
-
-#findhotels {
-    text-align:center;
+background-color:#fff;
+text-align:center;
+height:45px;
+width:100%;
 }
 
-    
+#autocomplete {
+width:50%;
+text-align:center;
+}
+
+#map {
+height:80vh;
+width:100vw;
+position:relative;
+overflow:hidden;
+}
+
+#findhotels {
+text-align:center;
+}
+
 #resultsTable {
-    border-collapse: collapse;
-    width: 240px;
+border-collapse:collapse;
+width:240px;
 }
 
 #listing {
-    position: absolute;
-    height: 80%;
-    overflow: auto;
-    cursor: pointer;
-    overflow-x: hidden;
+position:absolute;
+height:80%;
+overflow:auto;
+cursor:pointer;
+overflow-x:hidden;
 }
 
-      
- #rating {
-        font-size: 13px;
-        font-family: Arial Unicode MS;
-      }
-      
-@media all and (max-width: 992px) {
-  #resultsTable { display: none; }
+#rating {
+font-size:13px;
+font-family:Arial Unicode MS;
 }
-     
+
+@media all and max-width 992px{
+#resultsTable {
+display:none;
+}
+}
