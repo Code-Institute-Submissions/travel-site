@@ -94,6 +94,11 @@ font-size:13px;
 font-family:Arial Unicode MS;
 }
 
+#upper {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
 @media (max-width: 992px){
 #resultsTable {
 display:none;
