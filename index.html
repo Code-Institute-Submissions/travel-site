@@ -2,8 +2,6 @@
 <html>
 
 <head>
-    <!--Import javaScript file-->
-    <script type="text/javascript" src="js/myscript.js"></script>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -266,37 +264,16 @@
         </div>
     </footer>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgWXl6gNN4hO1kHofY0XaVbhI6d5hKggs&libraries=places&callback=initMap" async defer></script>
+    
     </section>
 
-    <!--JavaScript at end of body for optimized loading-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgWXl6gNN4hO1kHofY0XaVbhI6d5hKggs&libraries=places&callback=initMap" async defer></script>
 
     <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/myscript.js"></script>
 
-    <script>
-        //Sidenav
-        const sideNav = document.querySelector('.sidenav');
-        M.Sidenav.init(sideNav, {});
-
-        // Slider
-        const slider = document.querySelector('.slider');
-        M.Slider.init(slider, {
-            indicators: false,
-            height: 500,
-            transition: 500,
-            interval: 6000
-        });
-
-        // Material Boxed
-        const mb = document.querySelectorAll('.materialboxed');
-        M.Materialbox.init(mb, {});
-
-        // ScrollSpy
-        const ss = document.querySelectorAll('.scrollspy');
-        M.ScrollSpy.init(ss, {});
-    </script>
+    
 </body>
 
 </html>
