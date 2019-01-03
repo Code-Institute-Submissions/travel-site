@@ -8,6 +8,7 @@ table {
 font-size:12px;
 }
 
+
 .section-return {
 padding-top:2rem;
 padding-bottom:2rem;
@@ -59,7 +60,9 @@ width:100%;
 
 #autocomplete {
 width:50%;
+height:45px;
 text-align:center;
+font-weight: 600;
 }
 
 #map {
