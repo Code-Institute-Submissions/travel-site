@@ -89,12 +89,14 @@ and the Google Map can funtion when the site is loaded.
  
  Content:
  
- The content used in this site was obtained from: http://www.wikipedia.com
+ [Wikipedia](http://www.wikipedia.com)
+ [Google Maps API](https://developers.google.com/maps/documentation/)
+ [Materialize](https://materializecss.com/)
  
  
  Media:
  
- The photos used in this site belong to the author.
+ The photos used in this site belong to the [author](Ciaran Mitchell)
                                                   
 
 
