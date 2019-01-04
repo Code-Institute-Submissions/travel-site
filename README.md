@@ -41,6 +41,8 @@ back to the homepage.
 * Ensure that the submit button returns the user to the homepage.
 
 
+
+
 *SEARCH FUNCTION AND MAP TOO FAR DOWN THE PAGE*
 
 UserStory: The user would load the page and the first thing they would see was the slider which occupied most of the page. User was unsure where to click at first.
