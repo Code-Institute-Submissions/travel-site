@@ -9,34 +9,36 @@ It demonstrates the use of HTML, CSS, jS, Materialize, Font Awesome, and the Goo
 
 ## Features
  
-Users are prompted to enter a city which they would like to travel to. Once the city is entered,
+* Users are prompted to enter a city which they would like to travel to. Once the city is entered,
 users are provided with locations of the hotels in the area. In addition, the name of the hotels are listed below the map. Users can either explore the hotels 
 on the map by clicking on the markers, or choose a specific hotel from the given. 
 Once clicked, the user is shown the name, address, telephone number, rating and website(where available) of the hotel.
 
 
-Users are also provided with details of popular destinations, as well as a photo gallery showing popular places around the world.
+* Users are also provided with details of popular destinations, as well as a photo gallery showing popular places around the world.
 
-There is a social media section for users to follow CS-Travel. As this is not an actual company, the links direct the user 
+* There is a social media section for users to follow CS-Travel. As this is not an actual company, the links direct the user 
 back to the homepage.
 
-In the Contact section, users can see CS-Travel's address and contact the company with queries regarding bookings. 
+* In the Contact section, users can see CS-Travel's address and contact the company with queries regarding bookings. 
 
-On screen sizes 992px and below, the navigation bar becomes a side-nav for user convenience.
+* On screen sizes 992px and below, the navigation bar becomes a side-nav for user convenience.
 
 
 
 ## Testing
 
-Click on each nav-bar item. Ensure that you are directed to the correct location on the page.
+* Click on each nav-bar item. Ensure that you are directed to the correct location on the page.
 
-Ensure that the Google Map loads once the user enters the site.
+* Ensure that the Google Map loads once the user enters the site.
 
-Ensure that all social media links return the user to the homepage.
+* Ensure that all social media links return the user to the homepage.
 
-Enter an email address in the email input field of the Contact section without using the '@' symbol. Ensure that the error message 'Please include an '@' in the email address' is displayed.
-Enter characters before and after an '@' in the email input field. Ensure that the line below the email field turns green. If charcaters are not entered in this order, then the line will be red.
-Ensure that the submit button returns the user to the homepage.
+* Enter an email address in the email input field of the Contact section without using the '@' symbol. Ensure that the error message 'Please include an '@' in the email address' is displayed.
+
+* Enter characters before and after an '@' in the email input field. Ensure that the line below the email field turns green. If charcaters are not entered in this order, then the line will be red.
+
+* Ensure that the submit button returns the user to the homepage.
 
 
 *SEARCH FUNCTION AND MAP TOO FAR DOWN THE PAGE*
@@ -72,13 +74,13 @@ This was fixed by using colours which compliment each other and allow the font t
 
 ## Deployment
 
-*This website was deployed by going to Github.com and selecting the 'travel-site' repository.
+* This website was deployed by going to Github.com and selecting the 'travel-site' repository.
 
-*From there, I clicked on 'settings' and scrolled down to the 'Github Pages section'.
+* From there, I clicked on 'settings' and scrolled down to the 'Github Pages section'.
 
-*I selected 'master branch' as the source, and the site is now deployed at (https://ciaranm-2018.github.io/travel-site/)
+* I selected 'master branch' as the source, and the site is now deployed at (https://ciaranm-2018.github.io/travel-site/)
 
-*I then added (https://ciaranm-2018.github.io/travel-site/) to the list of HTTP referrers, so that API requests can be made
+* I then added (https://ciaranm-2018.github.io/travel-site/) to the list of HTTP referrers, so that API requests can be made
 and the Google Map can funtion when the site is loaded.
 
  
