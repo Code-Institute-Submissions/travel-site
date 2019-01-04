@@ -1,8 +1,4 @@
--Overview-
-  
-  
-  
-  CS-Travel Site
+# CS-Travel Site
 
 This is a website designed for users to search for hotels in their desired locations around the world.
 Users can see names, addresses, telephone numbers, ratings and websites(where available) of the hotels.
@@ -11,7 +7,7 @@ It demonstrates the use of HTML, CSS, jS, Materialize, Font Awesome, and the Goo
 
 
 
- -Features-
+## Features
  
 Users are prompted to enter a city which they would like to travel to. Once the city is entered,
 users are provided with locations of the hotels in the area. In addition, the name of the hotels are listed below the map. Users can either explore the hotels 
@@ -26,11 +22,11 @@ back to the homepage.
 
 In the Contact section, users can see CS-Travel's address and contact the company with queries regarding bookings. 
 
-On screen sizes 992px and below, the navigation bar becomes a drop-down menu for user convenience.
+On screen sizes 992px and below, the navigation bar becomes a side-nav for user convenience.
 
 
 
- -Testing-
+## Testing
 
 Click on each nav-bar item. Ensure that you are directed to the correct location on the page.
 
@@ -43,7 +39,7 @@ Enter characters before and after an '@' in the email input field. Ensure that t
 Ensure that the submit button returns the user to the homepage.
 
 
-SEARCH FUNCTION AND MAP TOO FAR DOWN THE PAGE
+*SEARCH FUNCTION AND MAP TOO FAR DOWN THE PAGE*
 
 UserStory: The user would load the page and the first thing they would see was the slider which occupied most of the page. User was unsure where to click at first.
 
@@ -51,7 +47,7 @@ This was fixed shortly after as I removed the slider, pushed the search function
 and the hotels in that area are shown immediately.
 
 
-RESULTS TABLE SHOWING UNDER THE MAP
+*RESULTS TABLE SHOWING UNDER THE MAP*
 
 UserStory: The user would search for hotels and then be given a list of results below the map. This lead to a lot of unnecessary scrolling and a bad user expereince.
 
@@ -59,14 +55,14 @@ This was fixed shortly after as I had the results table show on the map rather t
 For screens with a width below 992px, I removed the results table, as it would cover too much of the map. Instead, users can use their fingers to move the map and click on the results.
 
 
-SOCIAL MEDIA LINKS NOT VERY NOTICEABLE 
+*SOCIAL MEDIA LINKS NOT VERY NOTICEABLE*
 
 UserStory: The user scrolled past the social media section without noticing it, as it was placed in the middle of the page.
 
 This was fixed by moving the social media links to the footer, for a better user experience.
 
 
-COLOUR-SCHEME MADE THE FONT DIFFICULT TO READ
+*COLOUR-SCHEME MADE THE FONT DIFFICULT TO READ*
 
 UserStory: The user found the font difficult to read as the initial colours were too bright. 
 
@@ -74,17 +70,20 @@ This was fixed by using colours which compliment each other and allow the font t
 
 
 
- -Deployment-
+## Deployment
 
-This website was deployed by going to Github.com and selecting the 'travel-site' repository.
-From there, I clicked on 'settings' and scrolled down to the 'Github Pages section'.
-I selected 'master branch' as the source, and the site is now deployed at https://ciaranm-2018.github.io/travel-site/
-I then added https://ciaranm-2018.github.io/travel-site/ to the list of HTTP referrers, so that API requests can be made
+*This website was deployed by going to Github.com and selecting the 'travel-site' repository.
+
+*From there, I clicked on 'settings' and scrolled down to the 'Github Pages section'.
+
+*I selected 'master branch' as the source, and the site is now deployed at (https://ciaranm-2018.github.io/travel-site/)
+
+*I then added (https://ciaranm-2018.github.io/travel-site/) to the list of HTTP referrers, so that API requests can be made
 and the Google Map can funtion when the site is loaded.
 
  
  
--Credits-
+## Credits
  
  Content:
  
@@ -97,7 +96,7 @@ and the Google Map can funtion when the site is loaded.
                                                   
 
 
- -Author-
+## Author
 
  Ciaran Mitchell
  
