@@ -198,12 +198,6 @@ function buildIWContent(place) {
     }
 }
 
-$(document).ready(function() {
-	$("#form_id").submit(function() {
-		event.preventDefault();
-	});
-});
-
 
  //Sidenav
         const sideNav = document.querySelector('.sidenav');
